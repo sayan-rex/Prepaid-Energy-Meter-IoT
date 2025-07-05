@@ -1,0 +1,9 @@
+{
+  "voltage": 230.5,
+  "current": 0.71,
+  "power": 165.4,
+  "energy": 5.21,
+  "balance": 2.34,
+  "relay": true,
+  "lastRecharge": "2025-07-05T14:00:00Z"
+}
