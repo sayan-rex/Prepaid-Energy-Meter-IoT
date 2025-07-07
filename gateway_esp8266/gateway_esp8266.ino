@@ -38,7 +38,7 @@ void setup() {
   radio.setDataRate(RF24_250KBPS);
   radio.setRetries(5, 15);
 
-  Serial.println("\n🔌 Master Gateway Ready");
+  Serial.println("\n Master Gateway Ready");
 }
 
 void loop() {
@@ -46,7 +46,7 @@ void loop() {
   pollAndUpload();
 }
 
-// 🔄 Broadcast heartbeat for shadow
+// Broadcast heartbeat for shadow
 void sendHeartbeat() {
   static unsigned long lastBeat = 0;
   if (millis() - lastBeat >= 5000) {
@@ -58,7 +58,7 @@ void sendHeartbeat() {
   }
 }
 
-// 📡 Poll child nodes and upload to Firestore
+//  Poll child nodes and upload to Firestore
 void pollAndUpload() {
   static int currentNode = 1;
   char pipeName[6];
